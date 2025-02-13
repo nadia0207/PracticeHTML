@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ES-es"> <!--Inicio de la Pagina-->
+    <head> <!--Inicio del HEAD-->
+        <meta charset="UTF-8">
+        <meta name="Description" content="Descripcion de la Pagina" > <!--Descripcion de la Pagina-->
+        <meta name="Keywords" content="Palabras clave, separadas por comas" > <!--Palabras claves-->
+        <title>Titulo de mi Pagina</title> <!--Titulo de la Pagina-->
+        <link> <!--Vincula a una hoja de estilo CSS externa-->
+    </head> <!--Fin del HEAD-->
+
+    <body> <!--Comienzo del BODY-->
+        <!--Lista Ordenada-->
+        <ol>
+            <li>Primer elemento de la lista ordenada</li>
+            <li>Segundo elemento de la lista ordenada</li>
+            <li>Tercer elemento dela lista ordenada</li>
+        </ol>
+        <br><br>
+
+        <!--Lista NO Ordenada-->
+        <ul>
+            <li>Primer elemento de la lista no ordenada</li>
+            <li>Segundo elemento de la lista no ordenada</li>
+            <li>Tercer elemento dela lista no ordenada</li>
+        </ul>
+        <br><br>
+
+        <!--Lista NO Ordenada dentro de otra ordenada-->
+        <ol>
+            <li>Primer elemento de la lista ordenada</li>
+            <li>
+                <ul>
+                    <li>Segundo de la ordenada y primero de la lista NO ordenada</li>  
+                    <li>Segundo de la ordenada y segundo de la lista NO ordenada</li>              
+                    <li>Segundo de la ordenada y tercero de la lista NO ordenada</li>
+                    <li>solo para commit de prueba</li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>Tercer elemento de la lista ordenada</li>
+        </ol>
+        <br><br>
+
+        <p>Lista por definición</p>
+        <br>
+        <d1>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </d1>
+
+        <br><br>
+
+        <table border="1px">
+            <caption>Tabla simple de 3x3</caption>
+            <tr>
+                <td>Celda A</td>
+                <td>Celda B</td>
+                <td>Celda C</td>
+            </tr>
+            <tr>
+                <td>Celda E</td>
+                <td>Celda F</td>
+                <td>Celda G</td>
+            </tr>
+            <tr>
+                <td>Celda H</td>
+                <td>Celda I</td>
+                <td>Celda J</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <table border="1">
+            <caption>Tabla con celdas unidas mediante COLSPAN</caption>
+            <tr>
+                <th>NOMBRE</th>
+                <th>Día 1</th>
+                <th>Día 2</th>
+                <th>Día 3</th>
+                <th>Día 4</th>
+            </tr>
+            <tr>
+                <th>Mike (lastimado)</th>
+                <td colspan="3">0 km</td>
+                <td>4 km</td>
+            </tr>
+            <tr>
+                <th>Susan</th>
+                <td>23 km</td>
+                <td>18 km</td>
+                <td>19 km</td>
+                <td>15 km</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <!--Tabla con celdas unidas por rowspan-->
+        <table border="1">
+            <caption>Tabla con celdas unidas por ROWSPAN</caption>
+            <tr>
+                <th>&nbsp;</th> <!--Celda vacia-->
+                <th>Básico</th>
+                <th>Completo</th>
+            </tr>
+            <tr>
+                <th>Instalación</th>
+                <td rowspan="2">Gratis!</td>
+                <td>$49.99</td>
+            </tr>
+            <tr>
+                <th>Primer año</th>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <th>Segundo año</th>
+                <td>$9.99</td>
+                <td>$29.99</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <h1>Su pedido</h1>
+        <table border="1px">
+            <tr>
+                <th scope="col">Nombre Producto</th>
+                <th scope="col">Precio Unitario</th> 
+                <th scope="col">Unidades</th>
+                <th scope="col">SubTotal</th>
+            </tr>
+            <tr>
+                <td>Reproductor MP3 (80GB)</td>
+                <td>192.02</td>
+                <td>1</td>
+                <td>192.02</td>
+            </tr>
+            <tr>
+                <td>Fundas de colores</td>
+                <td>2.50</td>
+                <td>5</td>
+                <td>12.50</td>
+            </tr>
+            <tr>
+                <td>Reproductor de Radio</td>
+                <td>12.99</td>
+                <td>1</td>
+                <td>12.99</td>
+            </tr>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <td>-</td>
+                <td>7</td>
+                <td><strong>207.51</strong></td>
+            </tr>
+        </table>
+        <br><br>
+
+        <table border="1px">
+            <tr>
+                <th>Hoy</th>
+                <th>Mañana</th>
+                <th>Jueves</th>
+            </tr>
+            <tr>
+                <td>Soleado</td>
+                <td>Mayormente Soleado</td>
+                <td>Parcialmente Nublado</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <table border="1px">
+            <tr>
+                <th scope="row">Día</th>
+                <th>Hoy</th>
+                <th>Mañana</th>
+                <th>Jueves</th>
+            </tr>
+            <tr>
+                <th>Condición</th>
+                <td>Soleado</td>
+                <td>Mayormente Soleado</td>
+                <td>Parcialmente Nublado</td>
+            </tr>
+            <tr>
+                <th>Temperatura</th>
+                <td>19° C</td>
+                <td>17° C</td>
+                <td>12° C</td>
+            </tr>
+            <tr>
+                <th>Vientos</th>
+                <td>E 13 km/h</td>
+                <td>E 11 km/h</td>
+                <td>E 16 km/h</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <figure>
+            <img src="img/Imagen1.jfif" width="400" height="297" alt="No se encuentra la imagen" title="Snoopy Nadia">
+            <figcaption>Descripcion de la imagen</figcaption> <!-- debe ir dentro del figura-->
+        </figure>
+
+        
+        <video id="video" width="720px" controls loop autoplay>
+            <source src="Videos/video1.mp4">
+        </video>
+        
+
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/pDB8jKqXO6s" title="Mi STACK de Programador con el que GENERO DINERO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <form>
+            <input type="text" name="miFormulario" id="etiquetaText" value="Angel">
+            <input type="submit" value="Aceptar">
+        </form>
+    </body> <!--Fin del BODY-->
+
+</html> <!--Fin de la Pagina WEB-->

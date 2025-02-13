@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ES-es"> <!--Inicio de la Pagina-->
+    <head> <!--Inicio del HEAD-->
+        <meta charset="UTF-8">
+        <meta name="Description" content="Descripcion de la Pagina" > <!--Descripcion de la Pagina-->
+        <meta name="Keywords" content="Palabras clave, separadas por comas" > <!--Palabras claves-->
+        <title>Titulo de mi Pagina</title> <!--Titulo de la Pagina-->
+        <link> <!--Vincula a una hoja de estilo CSS externa-->
+    </head> <!--Fin del HEAD-->
+
+    <body> <!--Inicio del BODY-->
+        <form name="formulario" id="formulario" method="get" autocomplete="off">
+            Email: <input type="email" name="email" id="email">
+            <input type="submit" value="Aceptar"><br><br>
+            
+            Edad: <input type="number" name="edad" id="edad" min="18" max="100">
+            <input type="submit" value="Aceptar"><br><br>
+
+            Buscar: <input type="search" name="Buscar" id="buscar"><br><br>
+
+            URL: <input type="url" name="URL" id="URL"><br><br>
+
+            Edad: <input type="number" name="edad" id="edad" min="0" max="100" step="5" placeholder="Introduce edad"><br><br>
+
+            Rango: <input type="range" min="0" max="100" step="5"><br><br>
+
+            Fecha: <input type="date" name="fecha" id="fecha"><br><br>
+
+            Hora: <input type="time" name="hora" id="hora" required>
+
+            Codigo Postal: <input pattern="[0-9]{5}" placeholder="5 Dígitos"> <br><br>
+
+            <input type="submit" value="Enviar"><br><br>
+
+         </form>
+
+         <form name="formulario2" method="get">
+            <datalist id="informacion">
+                <option value="952773366" label="telefono 1"></option>
+                <option value="952734366" label="telefono 2"></option>
+                <option value="952773236" label="telefono 3"></option>
+            </datalist>
+
+            Telefono: <input type="tel" name="telefono" id="telefono" list="informacion">
+
+         </form>
+
+    </body> <!--Fin del BODY-->
+</html>

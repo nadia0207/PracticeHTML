@@ -10,6 +10,79 @@
 
     <body>
         <h1>Titulo h1</h1>
+
+        <span class="miEstilo">Palabra de prueba para ver el CSS</span>
+
+        <p>Esto es un parrafo de texto. Para crear automaticamente un texto de prueba, esbribimos LoremXX,
+            donde XX sera el numero de palabras que queremos crear. Y a continuación les damos a la tecla TAB.    
+         </p>
+     
+         <br> <!--Salto de Linea-->
+     
+         <pre class="miEstilo">
+             Etiqueta de texto preformateado. El navegador interpreta el texto escrito tal y como esta, respetando
+             los saltos de lineas, espacios, etc. indicados.
+             Por ejemplo, ahora vamos a poner dos saltos de lineas.
+     
+     
+             ... y luego seguiremos escribiendo.
+         </pre>
+
+         <h2 id="contacto">Contactenos</h2>
+
+         <form action="registrardatos.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Formulario de comentarios</legend>
+
+                <label for="nombre">Ingrese su nombre:</label>
+                <input type="text" name="nombre" maxlength="10" size="10" id="nombre"><br><br>
+                <!--Size es el tamaño de la caja pero no de la cantidad de texto a ingresar con 
+                maxlength se limita la cantidad de letras a ingresar. En este ejemplo como estamos trabajando con CSS
+                prebalece el tamaño que indiquemos en CSS -->
+
+                <label for="apellidos">Ingrese apellidos:</label>
+                <input type="text" name="apellidos" maxlength="100" id="apellidos"><br><br>
+
+                <label for="email">Ingrese su email:</label>
+                <input type="email" name="email" size="50" id="email"><br>
+
+                <label for="comentarios">Cometarios:</label><br>
+                <textarea name="comentarios" rows="10" cols="30" id="comentarios"></textarea><br>
+
+                Sexo: <br>
+                <input type="radio" name="sexo" value="hombre">Hombre<br>
+                <input type="radio" name="sexo" value="mujer">Mujer<br><br>
+
+                Fibrero Adjunto: 
+                <input type="file" name="adjunto">
+                <br><br>
+
+                <input type="submit" name="enviar" value="enviar">
+                <input type="reset" name="limpiar" value="Borrar datos">
+            </fieldset>
+        </form>
+        <p name="parrafotipo2">Parrafo numero 2: Esto es un parrafo de texto. Para crear automaticamente un texto de prueba, esbribimos LoremXX,
+            donde XX sera el numero de palabras que queremos crear. Y a continuación les damos a la tecla TAB.    
+        </p>
+
+        <p>Esto es un parrafo de texto. Para crear automaticamente un texto de prueba, esbribimos LoremXX,
+            donde XX sera el numero de palabras que queremos crear. Y a continuación les damos a la tecla TAB.    
+        </p>
+
+        <p>Esto es un parrafo de texto. Para crear automaticamente un texto de prueba, esbribimos LoremXX,
+            donde XX sera el numero de palabras que queremos crear. Y a continuación les damos a la tecla TAB.    
+        </p>
+        
+        <p name="parrafotipo2">parrafo tipo 2:Esto es un parrafo de texto. Para crear automaticamente un texto de prueba, esbribimos LoremXX,
+            donde XX sera el numero de palabras que queremos crear. Y a continuación les damos a la tecla TAB.    
+        </p>
+
+
+
+
+
+
+
     </body>
 
 </html>

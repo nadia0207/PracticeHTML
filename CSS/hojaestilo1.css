@@ -1,6 +1,59 @@
 h1{
     text-align: center;
     font-family:'Lucida Grande';
-    font-size: 32;
+    font-size: 50;
     color: brown;
+}
+/* Aqui va comentarios*/
+
+@font-face {
+    font-family: 'fuentenadia';
+    src: url('Fonts/OleoScript-Regular.ttf');
+}
+
+p{
+    font-family: 'fuentenadia',sans-serif; /*si "fuentenadia" no carga, el navegador usará una fuente genérica sans-serif.*/
+    font-size: 20px;
+    color: blue;
+    background: linear-gradient(to right,#33ccff 0%,#ff99cc 100%);
+
+    
+}
+
+.miEstilo{
+color: rgb(255, 102, 0);
+}
+
+#contacto {
+color: red;
+font-size: 14;   
+}
+
+label{
+    color:rgb(26, 146, 82);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type='text']{
+    width: 400px; /*Ancho*/
+    height: 8px; /*Alto*/
+    padding: 10px; /*Espacio interno*/
+    font-size: 16px; /*Tamaño fuente*/
+    border: 2px solid blue;/*Borde azul*/
+    border-radius: 5px; /*Bordes redondeados*/
+    background-color: #f0f8ff; /*color fondo*/
+    color: black; /*color texto*/
+}
+
+input[type='text']:focus{
+    border-color: red;/*cambiar el borde a rojo cuando se haga clic*/
+    outline: none; /*elimina el borde predeterminado*/
+    background-color: hsl(11, 53%, 85%); /* Cambia el color de fondo */;
+
+}
+
+p[name='parrafotipo2']{
+    color: rgb(236, 50, 229);
+    background-color: rgba(165, 165, 238, 0.3); /*el 0.3 que esta en parentesis para que sea transparente*/
 }

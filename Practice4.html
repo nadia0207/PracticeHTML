@@ -10,9 +10,22 @@
 
        
     <body>
-        <h1>¡Hola Javacript!</h1>
-        <h2>Aprendiendo GIT</h2>
-        <h3>Aprendiendo programar</h3>
+        <form action="registrardatos.php" method="post">
+            <fieldset>
+                <legend>Formulario de comentarios</legend>
+                <label for="nombre">Ingrese su nombre:</label>
+                <input type="text" name="nombre" size="30" id="nombre"><br>
+
+                <label for="email">Ingrese su email:</label>
+                <input type="email" name="email" size="50" id="email"><br>
+
+                <label for="comentarios">Cometarios:</label><br>
+                <textarea name="comentarios" rows="5" cols="60" id="comentarios"></textarea><br>
+
+                <input type="submit" value="enviar">
+            </fieldset>
+
+        </form>
 
     </body>
 

@@ -57,3 +57,17 @@ p[name='parrafotipo2']{
     color: rgb(236, 50, 229);
     background-color: rgba(165, 165, 238, 0.3); /*el 0.3 que esta en parentesis para que sea transparente*/
 }
+
+.container{
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap; /*Comportamiento por defecto nowrap*/
+    background: rgb(79, 159, 225);
+    width: 200px;
+}
+
+.item{
+    background: gray;
+    width: 50%;
+    color: white;   
+}

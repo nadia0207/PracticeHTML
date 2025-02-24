@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--    <script src="Javascript/Practicando5.js"></script>-->
+
+    <script>
+        var articulos = ["balon", "botas","camiseta","pantalon"];
+    </script>
+</head>
+
+<body>
+    <script>
+        document.write(articulos);
+        document.write("<br>");
+        document.write("<p>El primer articulo es <strong>" + articulos[0]+ "</strong></p>");
+        document.write("<p>La longitud del Array es <strong>" +articulos.length + "</strong></p>");
+        document.write("<p>El ultimo articulo es <strong>" + articulos[articulos.length-1] + "</strong></p>");
+
+        articulos.unshift("pelota");
+        articulos.push("canasta");
+        
+        document.write("<p>Añadimos el articulo <strong>" + articulos[0]+ "</strong></p>");
+        document.write("<p>El primer Articulo es  <strong>" + articulos[0]+ "</strong></p>");
+        document.write("<p>El ultimo articulo es <strong>" + articulos[articulos.length-1] + "</strong></p>");
+        document.write("<p>La longitud del Array ahora es <strong>" +articulos.length + "</strong></p>");
+        document.write(articulos);
+
+        articulos.push(prompt("Introduce un Articulo"));
+        document.write("<br>");
+        document.write(articulos);
+
+    </script>
+       
+</body>
+</html>

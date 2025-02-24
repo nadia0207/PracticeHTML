@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var num = 5;
+        document.write(num);
+        document.write("<br>");
+
+        if(true){
+            let num = 10;
+            document.write(num);
+            document.write("<br>");
+        }
+
+        document.write(num);
+        document.write("<br>");
+
+        var num1 = 6;
+        var num2 = "15";
+        resultado = num1 + Number(num2);
+        document.write(resultado);
+        document.write("<br>");
+
+        const nombre = "Ariadne";
+        console.log("El nombre es:", nombre);
+
+        //operador incremento
+        var numeroinicial = 20;
+        let numeroincrementado = ++numeroinicial;
+        console.log("el operador incremento con ++numeroinicial: " + numeroincrementado)
+
+        var numeroinicial2 = 30
+        var numeroincremento2 = numeroinicial2++;
+        console.log("el operador incremento con numeroinicial++ " + numeroincremento2)
+
+        var nom = "Astrid";
+        var apel = "Arce";
+        console.log(nom + " " + apel);
+
+        var texto = "Esto es el texto";
+        var busqueda = texto.indexOf("texto");
+        document.write("IndexOf " + busqueda);
+        document.write("<br>");
+
+        var nombres = prompt("Introduce tu nombre:");
+        var apellidos = prompt("Introduce tu apellido:");
+        var texto1 = "Tu nombre es: " + nombres + " y tu apellido es: " + apellidos;
+        console.log(texto1);
+        document.write(texto1);
+
+        var texto2 = `<h3>Tu nombre es ${nombres}</h3> <h3>y tu apellido es ${apellidos}</h3>`;
+        console.log(texto2);
+        document.write(texto2);
+    
+       
+
+    </script>
+    
+</body>
+</html>

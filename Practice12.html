@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/hojaestilo3.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<ul>");
+            var nombres = ["Angel", "Sara", "Manolo", "Ana", "Ronnie"];
+            for(var i=0 ; i < nombres.length ; i++){
+                document.write("<li>" +nombres[i] + "</li>");
+
+            };
+        document.write("</ul>");    
+    
+    
+            var trabajadores = new Array();
+            var contador = 0;
+            var persona;
+
+            while(persona != "salir"){
+                persona = prompt("Introduce nombre");
+                trabajadores[contador]=persona;
+                contador++;
+            }
+
+            trabajadores.pop(); //eliminamos el ultimo elemento agregado que seria "salir"
+
+            for(var j=0 ; j <trabajadores.length; j++ ){
+                document.write(trabajadores[j] + "<br>");
+            }
+
+
+            
+             
+            
+</script>
+
+
+        
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       
+        function obtenerDatosServidor(callback){
+            document.write("cargando datos ...");
+
+            //setTimeout (esperar un tiempo antes de ejecutar algo)
+            setTimeout(() => {
+                var datos = {nombre:"Jose" , edad:30}; //datos es un objeto
+                callback(datos);
+            },3000); //"Este mensaje aparece después de 3 segundos"
+        }
+
+        function mostrarDatos(datos1){
+            console.log("Datos recibidos: " , datos1) //asi el objeto si se ve en consola
+            document.write("<br>Datos fueron recibidos:" + JSON.stringify(datos1)); //con el JSON.stringify convertimos el objeto a texto legible
+        }
+
+        obtenerDatosServidor(mostrarDatos);
+
+        document.write("<br><br><br><br>");
+
+    </script>
+
+    <input type="button" value="PULSAME" onclick="alert('Boton pulsado')">
+
+    
+</body>
+</html>

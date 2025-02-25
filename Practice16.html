@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+        //declaracion de la funcion
+        function suma2(num1,num2){
+            document.write("La suma es de " + num1+ " y " +num2+ " es " + (num1+num2) + "<br>");
+            console.log("La suma es de " + num1+ " y " +num2+ " es " + (num1+num2));
+        }
+
+        
+        var numero1 = Number(prompt("Inserte primer numero"));
+        var numero2 = Number(prompt("Inserte segundo numero"));
+        //llamda de la funcion
+        suma2(numero1,numero2);
+
+
+        function fecha(){
+            document.write(Date());
+        }
+
+    </script>
+
+    <h1>Hola es día: 
+        <script>
+            fecha();
+        </script>
+
+    </h1>
+
+    
+</body>
+</html>
